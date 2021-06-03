@@ -33,3 +33,5 @@ php artisan migrate
 
 php artisan make:factory CategoryFactory --model=Category
 php artisan make:factory ProductFactory --model=Product
+
+php artisan make:livewire DetailsComponent

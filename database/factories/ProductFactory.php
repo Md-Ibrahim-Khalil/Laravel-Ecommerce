@@ -28,8 +28,8 @@ class ProductFactory extends Factory
         return [
             'name' => $product_name,
             'slug' => $slug,
-            'short_descritption' => $this->faker->text(200),
-            'descritption' => $this->faker->text(500),
+            'short_description' => $this->faker->text(200),
+            'description' => $this->faker->text(500),
             'regular_price' => $this->faker->numberBetween(10,500),
             'SKU' => 'DIGI'.$this->faker->unique()->numberBetween(100,500),
             'stock_status' => 'instock',
