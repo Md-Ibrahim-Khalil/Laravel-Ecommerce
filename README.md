@@ -13,3 +13,23 @@ php artisan make:livewire CartComponent
 
 php artisan make:livewire CheckoutComponent
 
+composer require laravel/Jetstream
+
+php artisan jetstream:install livewire
+
+php artisan migrate
+
+
+php artisan make:middleware AuthAdmin
+php artisan migrate
+
+php artisan make:livewire admin/AdminDashboardComponent
+php artisan make:livewire user/UserDashboardComponent
+
+php artisan make:model Category -m
+php artisan make:model Product -m
+
+php artisan migrate
+
+php artisan make:factory CategoryFactory --model=Category
+php artisan make:factory ProductFactory --model=Product
